@@ -15,19 +15,19 @@ defmodule TodoList do
   end
 end
 
+todo_list =
+  TodoList.new()
+  |> IO.inspect()
+  |> TodoList.add_entry(~D[2018-12-19], "Dentist")
+  |> IO.inspect()
+  |> TodoList.add_entry(~D[2018-12-20], "Shopping")
+  |> IO.inspect()
+  |> TodoList.add_entry(~D[2018-12-19], "Movies")
 
-todo_list = TodoList.new()
-            |> IO.inspect
-            |> TodoList.add_entry(~D[2018-12-19], "Dentist") 
-            |> IO.inspect
-            |> TodoList.add_entry(~D[2018-12-20], "Shopping") 
-            |> IO.inspect
-            |> TodoList.add_entry(~D[2018-12-19], "Movies")
+TodoList.entries(todo_list, ~D[2018-12-19])
+|> IO.inspect()
+|> IO.puts()
 
-TodoList.entries(todo_list, ~D[2018-12-19]) 
-|> IO.inspect 
-|> IO.puts
-
-TodoList.entries(todo_list, ~D[2018-12-18]) 
-|> IO.inspect 
-|> IO.puts
+TodoList.entries(todo_list, ~D[2018-12-18])
+|> IO.inspect()
+|> IO.puts()

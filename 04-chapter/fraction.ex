@@ -17,20 +17,19 @@ defmodule Fraction do
   end
 end
 
-
 Fraction.add(
   Fraction.new(1, 2),
   Fraction.new(1, 4)
 )
-|> IO.inspect 
+|> IO.inspect()
 |> Fraction.value()
-|> IO.puts
+|> IO.puts()
 
 Fraction.new(1, 4)
-|> IO.inspect() 
+|> IO.inspect()
 |> Fraction.add(Fraction.new(1, 4))
-|> IO.inspect() 
+|> IO.inspect()
 |> Fraction.add(Fraction.new(1, 2))
 |> IO.inspect()
 |> Fraction.value()
-|> IO.puts
+|> IO.puts()

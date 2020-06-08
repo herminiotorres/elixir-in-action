@@ -4,4 +4,4 @@ defmodule MyModule do
   end
 end
 
-MyModule.run
+MyModule.run()

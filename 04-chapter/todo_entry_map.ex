@@ -29,18 +29,20 @@ end
 
 todo_list = TodoList.new()
 
-todo_list = TodoList.add_entry(todo_list, %{date: ~D[2018-12-19], name: "Dentist"}) 
-|> IO.inspect
+todo_list =
+  TodoList.add_entry(todo_list, %{date: ~D[2018-12-19], name: "Dentist"})
+  |> IO.inspect()
 
-todo_list = TodoList.add_entry(todo_list, %{date: ~D[2018-12-20], name: "Shopping"}) 
-|> IO.inspect
+todo_list =
+  TodoList.add_entry(todo_list, %{date: ~D[2018-12-20], name: "Shopping"})
+  |> IO.inspect()
 
-todo_list = TodoList.add_entry(todo_list, %{date: ~D[2018-12-19], name: "Movies"})
-|> IO.inspect
+todo_list =
+  TodoList.add_entry(todo_list, %{date: ~D[2018-12-19], name: "Movies"})
+  |> IO.inspect()
 
-TodoList.entries(todo_list, ~D[2018-12-19]) 
-|> IO.inspect 
+TodoList.entries(todo_list, ~D[2018-12-19])
+|> IO.inspect()
 
-TodoList.entries(todo_list, ~D[2018-12-18]) 
-|> IO.inspect 
-
+TodoList.entries(todo_list, ~D[2018-12-18])
+|> IO.inspect()

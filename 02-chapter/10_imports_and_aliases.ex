@@ -1,7 +1,7 @@
 defmodule Geometry do
   defmodule Rectangle do
     def area(a, b) do
-      ((a * a) + (b * b))
+      a * a + b * b
     end
   end
 end

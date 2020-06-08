@@ -1,7 +1,11 @@
 defmodule Geometry do
   @pi 3.14
 
-  def area({:rectangle, a, b }) do
+  def area(unknown) do
+    {:error, {:unknown_shape, unknown}}
+  end
+
+  def area({:rectangle, a, b}) do
     a * b
   end
 
@@ -11,9 +15,5 @@ defmodule Geometry do
 
   def area({:circle, r}) do
     r * r * @pi
-  end
-
-  def area(unknown) do
-    {:error, {:unknown_shape, unknown}}
   end
 end
