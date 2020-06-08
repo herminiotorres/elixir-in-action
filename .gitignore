@@ -1,2 +1,2 @@
-*.swap
-*.swp
+erl_crash.dump
+.elixir_ls/
